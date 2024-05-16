@@ -16,7 +16,7 @@ export function ImageGrid () {
           <img
             src={image}
             alt=''
-            className='h-full w-full object-cover object-center rounded-xl'
+            className='h-full w-full object-cover object-center rounded-xl shadow-xl'
           />
         </div>
       ))}

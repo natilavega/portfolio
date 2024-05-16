@@ -7,8 +7,8 @@ export default function HeroSection () {
         <div className='max-w-7xl mx-auto'>
           <div className='flex flex-col md:flex-row gap-20'>
             <div className='w-full max-w-xl relative lg:shrink-0'>
-              <h1 className=' text-zinc-900 tracking-tight capitalize font-bold text-4xl sm:text-6xl'>
-                Soluciones Frontend en React.js y Next.js
+              <h1 className='text-zinc-900 tracking-tight font-bold text-4xl sm:text-6xl'>
+                Soluciones Frontend en React y Next
               </h1>
               <div className='space-y-2 text-zinc-600 leading-8 mt-6 sm:max-w-md lg:max-w-none'>
                 <p>

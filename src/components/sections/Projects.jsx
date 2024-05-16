@@ -109,7 +109,7 @@ function Project ({ project }) {
           <img
             src={project.image}
             alt={project.title}
-            className='h-auto w-full object-cover object-center rounded-xl'
+            className='h-auto w-full object-cover object-center rounded-xl shadow-xl'
           />
         </div>
       </div>
