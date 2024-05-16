@@ -35,7 +35,7 @@ export default function SkillsSection () {
           Habilidades para marcar la diferencia.
         </h2>
         <p className='mt-6 text-base text-zinc-600'>
-          Aprecio profundamente el tiempo y los recursos dedicados a cada proyecto. Para honrar esta inversión, me esfuerzo por expresar las características que considero fundamentales en un buen trabajo, siempre buscando superarme y ofrecer lo mejor de mí.
+          Perfecciono constantemente mis habilidades, enfrentando desafíos cada vez más complejos con determinación hasta alcanzar resultados exitosos.
         </p>
       </div>
       <div className='mt-16 sm:mt-20'>

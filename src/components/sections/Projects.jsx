@@ -46,7 +46,7 @@ export default function ProjectsSection () {
           Mi huella en el mundo digital.
         </h2>
         <p className='mt-6 text-base text-zinc-600'>
-          Me apasiona contribuir a la creación de una web más accesible y beneficiosa para todos los usuarios. Cada proyecto que emprendo es una oportunidad para superar desafíos con dedicación y compromiso, buscando soluciones efectivas e innovadoras.
+          Cada proyecto que emprendo es una oportunidad para superar desafíos con dedicación y compromiso, buscando soluciones efectivas e innovadoras.
         </p>
       </div>
       <div className='mt-16 sm:mt-20'>
@@ -76,7 +76,7 @@ function Project ({ project }) {
             </span>
             {project.date}
           </time>
-          <p className='mt-2'>
+          <p className='text-base mt-2'>
             {project.summary}
           </p>
           <button
@@ -89,7 +89,7 @@ function Project ({ project }) {
             </svg>
           </button>
           <div className={`mt-4 transition-all duration-500 ease-in-out ${viewMore ? 'h-72 opacity-100' : 'h-0 opacity-0 overflow-hidden'}`}>
-            <p className="text-zinc-600">
+            <p className="text-base text-zinc-600">
               {project.body}
             </p>
             <div className='mt-4 flex flex-row gap-4'>
@@ -97,7 +97,7 @@ function Project ({ project }) {
                 <Budget key={skill} name={skill} />
               ))}
             </div>
-            {project.link && <a href={project.link.href} className='mt-6 flex items-center gap-2 text-sm font-medium text-zinc-900 hover:text-teal-500'>
+            {project.link && <a href={project.link.href} className='my-4 flex items-center gap-2 text-sm font-medium text-zinc-900 hover:text-teal-500'>
               {project.link.title}
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />

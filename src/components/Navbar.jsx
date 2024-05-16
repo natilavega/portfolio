@@ -69,7 +69,7 @@ export default function Navbar () {
             <a
               key={item.id}
               href={item.href}
-              className='px-4 py-3 text-sm lg:text-base text-zinc-500 text-end flex items-center hover:font-bold focus:text-black'
+              className='px-4 py-3 text-base text-zinc-500 text-end flex items-center hover:font-bold focus:text-black'
               onClick={() => setOpenNav(false)}
             >
               {item.name}
