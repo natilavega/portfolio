@@ -3,7 +3,6 @@ import imgProjectSection02 from '../../assets/ProjectsSection02.jpg'
 import imgProjectSection03 from '../../assets/ProjectsSection03.jpg'
 
 import { useState } from 'react'
-import { Budget } from '../Atoms'
 import { Section } from '../Layout'
 
 const projects = [
@@ -97,12 +96,18 @@ function Project ({ project }) {
                 <Budget key={skill} name={skill} />
               ))}
             </div>
-            {project.link && <a href={project.link.href} className='my-4 flex items-center gap-2 text-sm font-medium text-zinc-900 hover:text-teal-500'>
-              {project.link.title}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-            </a>}
+            {project.link &&
+              <a
+                href={project.link.href}
+                target='_blank'
+                className='my-4 flex items-center gap-2 text-sm font-medium text-zinc-900 hover:text-teal-500'
+              >
+                {project.link.title}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            }
           </div>
         </div>
         <div className='w-full sm:w-1/3 lg:w-2/5'>
@@ -114,5 +119,13 @@ function Project ({ project }) {
         </div>
       </div>
     </article>
+  )
+}
+
+function Budget ({ name }) {
+  return (
+    <span className='bg-zinc-100 rounded-md py-1 px-2 text-xs font-medium'>
+      {name}
+    </span>
   )
 }

@@ -1,3 +1,5 @@
+import avatar from '../assets/AboutSection02.jpg'
+
 import { useState } from 'react'
 import { SocialsList } from './sections/Contact'
 
@@ -11,7 +13,7 @@ const navigation = [
 const profile = {
   name: 'Natalia Lavega',
   description: 'Desarrolladora Frontend',
-  image: 'https://media.licdn.com/dms/image/D4D03AQHA2kh7ajR2kQ/profile-displayphoto-shrink_200_200/0/1687800451609?e=1720656000&v=beta&t=4eTE2cZsgjWnUxAwj7jZA-GhMWPSZWkZ2aeDwhNtyI0'
+  image: avatar
 }
 
 export default function Navbar () {
