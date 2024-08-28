@@ -7,7 +7,7 @@ const images = [imgAboutSection01, imgAboutSection02, imgAboutSection03, imgAbou
 
 export function ImageGrid () {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 mt-10">
+    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
       {images.map(image => (
         <div
           key={image}
